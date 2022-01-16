@@ -1,5 +1,3 @@
-
-
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
@@ -13,9 +11,8 @@ CREATE TABLE `admin` (
   `lastname` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-
-INSERT INTO `admin` (`admin_id`, `username`, `password`, `firstname`, `middlename`, `lastname`) VALUES
-(1, 'itsourcecode.co', 'itsourcecode', 'jude', 'reyes', 'suares');
+INSERT INTO `admin` (`admin_id`, `username`, `password`, `firstname`, `middlename`, `lastname`)
+ VALUES(1, 'teacher', 'teacher', 'mrs', 'arpita', 'santra');
 
 CREATE TABLE `student` (
   `student_id` int(11) NOT NULL,
@@ -27,11 +24,7 @@ CREATE TABLE `student` (
   `section` varchar(8) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-
 INSERT INTO `student` (`student_id`, `student_no`, `firstname`, `middlename`, `lastname`, `course`, `section`) VALUES
-
-
-
 CREATE TABLE `time` (
   `time_id` int(11) NOT NULL,
   `student_no` varchar(250) NOT NULL,
